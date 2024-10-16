@@ -5,39 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background: linear-gradient(orange, white, green);
+    
+        body{
+          
+            background:linear-gradient(orange,white,green);
             background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-
-        form {
-            width: 80vw;
-            max-width: 500px;
-            padding: 20px;
+         form{
+            margin: auto;
+            width: 60%;
             text-align: center;
             border: 5px solid black;
-            border-radius: 20px;
-            box-shadow: 10px 2px 5px 2px;
-            background: linear-gradient(orange, white, green);
-        }
-
-        .name, .branch, .dob {
-            width: 100%;
+           border-radius: 20px;
+           box-shadow: 10px 2px 5px 2px;
+         }
+         .name,.branch,.dob{
+            width: 50%;
             height: 40px;
             border-radius: 20px;
             border: 2px solid rgb(0, 0, 0);
             font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        button {
-            font-size: 20px;
+         }
+         button{
+            font-size: 25px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             padding: 10px;
             margin-top: 20px;
@@ -45,66 +35,45 @@
             color: white;
             border: 4px solid rgb(252, 252, 252);
             border-radius: 30px;
-            width: 100%;
-        }
-
-        input, select {
+            width: 30%;
+         }
+         input{
             text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            form {
-                width: 90vw;
-                padding: 15px;
-            }
-
-            button {
-                font-size: 18px;
-                padding: 8px;
-            }
-
-            h1, h2 {
-                font-size: 1.2em;
-            }
-
-            .name, .branch, .dob {
-                font-size: 18px;
-                height: 35px;
-            }
-        }
+         }
     </style>
 </head>
 <body>
     <div class="registration_form">
-        <form action="index.html" class="register">
+        <form action="experiment3.html" class="register">
             <h1>Registration Form</h1>
-            <h2>First Name: </h2>
-            <input type="text" class="name">
-            <h2>Middle Name: </h2>
-            <input type="text" class="name">
-            <h2>Last Name: </h2>
-            <input type="text" class="name">
-            <h2>Gender: </h2>
-            <input type="radio" name="gender" class="gender">Male
-            <input type="radio" name="gender" class="gender">Female
-            <h2>Date Of Birth: </h2>
+            <h2>First Name : </h2>
+            <input type="text"  name="" id="" class="name">
+            <h2>Middle Name : </h2>
+            <input type="text" name="" id="" class="name">
+            <h2>Last Name : </h2>
+            <input type="text" name="" id="" class="name">
+            <h2>Gender : </h2>
+            <input type="radio" name="gender" id="" class="gender">Male</input>
+            <input type="radio" name="gender" id="" class="gender">Female</input>
+            <h2>Date Of Birth : </h2>
             <input type="date" class="dob">
-            <h2>Branch: </h2>
-            <select name="branch" class="branch">
+             <h2>Branch : </h2>
+             <select name="branch" id="" class="branch">
                 <option value="CSE" class="branch">CSE</option>
                 <option value="MECH" class="branch">MECH</option>
                 <option value="ECE" class="branch">ECE</option>
                 <option value="EEE" class="branch">EEE</option>
                 <option value="CSM">CSM</option>
-            </select>
-            <h2>Interested Domains: </h2>
-            <input type="checkbox" name="domains" class="domains"> AIML
-            <input type="checkbox" name="domains" class="domains"> DS
-            <br>
-            <button type="submit" class="submit">Submit</button>
-            <div class="account">
-                <h3>Already have an account? <a href="login.html">Sign in</a></h3>
-            </div>
+
+             </select>
+             <h2>Intersted Domains : </h2>
+             <input type="checkbox" name="domains" id="" class="domains">AIML</input>
+             <input type="checkbox" name="domains" id="" class="domains">DS</input>
+             <br>
+             <button type="submit" class="submit">submit</button>
+             <div class="account">
+                <h3>Already have an account ? <a href="login.html">sign in</a></h3>
+             </div>
         </form>
     </div>
 </body>
